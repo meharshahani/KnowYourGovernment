@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".OfficialActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/officialLocation"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Chicago, IL, 60654" />
+
+
+        <TextView
+            android:id="@+id/officialOffice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/officialParty"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="U.S Senator" />
+
+        <TextView
+            android:id="@+id/officialName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialOffice"
+            tools:text="Tammy Duckworth" />
+
+        <TextView
+            android:id="@+id/officialParty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/officialLocation"
+            tools:text="(Democratic Party)" />
+
+        <ImageView
+            android:id="@+id/officialPortrait"
+            android:layout_width="195dp"
+            android:layout_height="217dp"
+            android:layout_marginTop="16dp"
+            android:onClick="imageButtonClick"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/officialParty"
+            app:layout_constraintStart_toStartOf="@+id/officialParty"
+            app:layout_constraintTop_toBottomOf="@+id/officialParty" />
+
+        <ImageView
+            android:id="@+id/officialLogo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineLogoDown"
+            app:layout_constraintEnd_toEndOf="@+id/officialPortrait"
+            app:layout_constraintStart_toStartOf="@+id/officialPortrait"
+            app:layout_constraintTop_toTopOf="@+id/guidelineLogoUp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLogoUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="276dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLogoDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="346dp" />
+
+        <LinearLayout
+            android:id="@+id/officialLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialName"
+            app:layout_constraintVertical_bias="0">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/channel1"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialLinearLayout" />
+
+        <ImageView
+            android:id="@+id/channel2"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/channel1"
+            app:layout_constraintTop_toBottomOf="@+id/officialLinearLayout" />
+
+        <ImageView
+            android:id="@+id/channel3"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/channel2"
+            app:layout_constraintTop_toBottomOf="@+id/officialLinearLayout" />
+
+        <ImageView
+            android:id="@+id/channel4"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/channel3"
+            app:layout_constraintTop_toBottomOf="@+id/officialLinearLayout" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.61" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

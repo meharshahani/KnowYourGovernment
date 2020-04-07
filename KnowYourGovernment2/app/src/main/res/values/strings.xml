@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KnowYourGovernment2</string>
+
+    <string name="versioning">"Version 1.0"</string>
+    <string name="rights">© 2020, Mehar Shahani</string>
+
+
+    <string name="urlDemocratic">https://democrats.org/</string>
+    <string name="urlRepublicans">https://gop.com/</string>
+
+</resources>
